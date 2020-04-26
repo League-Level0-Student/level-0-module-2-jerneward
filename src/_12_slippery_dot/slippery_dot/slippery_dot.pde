@@ -26,7 +26,11 @@
       int distance = getDistance(mouseX,mouseY, x,y);
       //6. Set the value of the distance variable to the value returned by the getDistance method
       //   Pass the mouse's x and y (mouseX and mouseY) and the x and y of your ellipse to the method.
-        if distance < X
+        if (distance < size/2){
+          x = (int)random(width);
+          y = (int)random(height);
+        }
+ 
           
       //7.  Use an if statement to check if the distance variable is < the radius of the ellipse
       //    If it is, set a new x and y for the ellipse, using a random location on the window
